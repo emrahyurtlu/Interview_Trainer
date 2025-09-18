@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebc8a053-ddd9-4f74-9e42-661ca78302f8" name="Changes" comment="Interview trainer project is initiated.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ebc8a053-ddd9-4f74-9e42-661ca78302f8" name="Changes" comment="Gitignore is added">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,11 +88,20 @@
       <option name="project" value="LOCAL" />
       <updated>1758227014399</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Gitignore is added">
+      <option name="closed" value="true" />
+      <created>1758227177050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758227177050</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Interview trainer project is initiated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Interview trainer project is initiated." />
+    <MESSAGE value="Gitignore is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gitignore is added" />
   </component>
 </project>

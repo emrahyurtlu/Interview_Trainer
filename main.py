@@ -28,9 +28,35 @@ vectorstore.save_local("database")
 print(vectorstore)
 
 ## QUERY THE DATA
+retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
 ## INTEGRATE WITH LLM
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
+qa_chain = RetrievalQA.from_chain_type(
+    llm=llm,
+    retriever=retriever,
+    chain_type="stuff"
+)
 
 ## OUTPUT FORMATTER
+prompt_template = PromptTemplate(
+    input_variables=["context", "question"],
+    template="""
+Give a clear and concise answer to the question using the following context::
+Context: {context}
+Question: {question}
+Answer (Türkçe): 
+"""
+)
 
 ##INTEGRATE WITH UI
+print("\n Q&A System Started! Type 'exit' to exit. \n")
+
+while True:
+    user_question = input("❓ Question: ")
+    if user_question.lower() in ["exit", "quit", "çıkış"]:
+        print("See you later!")
+        break
+
+    result = qa_chain.run(user_question)
+    print(f"💡 Answer: {result}\n")
